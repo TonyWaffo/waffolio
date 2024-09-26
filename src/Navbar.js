@@ -19,7 +19,8 @@ const Navbar=()=>{
                     <li><Link to="home" spy={true} smooth={true} offset={0} duration={500} delay={0} onClick={navToggle}>Home</Link></li>
                     <li><Link to="about" spy={true} smooth={true} offset={-90} duration={500} delay={0} onClick={navToggle}>About</Link></li>
                     <li><Link to="skills" spy={true} smooth={true} offset={-90} duration={500} delay={0} onClick={navToggle}>Skills</Link></li>
-                    {/*<li>Experience</li>*/}
+                    <li><Link to="experience" spy={true} smooth={true} offset={-90} duration={500} delay={0} onClick={navToggle}>Experience</Link></li>
+                    <li><Link to="project" spy={true} smooth={true} offset={-90} duration={500} delay={0} onClick={navToggle}>Project</Link></li>
                     <li><Link to="education" spy={true} smooth={true} offset={-90} duration={500} delay={0} onClick={navToggle}>Education</Link></li>
                     <li><Link to="contact" spy={true} smooth={true} offset={-90} duration={500} delay={0} onClick={navToggle}>Contact me</Link></li>
                 </ul>

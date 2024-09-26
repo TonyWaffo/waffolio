@@ -8,6 +8,7 @@ import Home from './Home.js'
 import About from './About.js'
 import Skills from './Skills.js'
 import Experience from './Experience.js'
+import Project from './Project.js';
 import Education from './Education.js'
 import Contact from './Contact.js'
 
@@ -18,7 +19,8 @@ root.render(
         <Home />
         <About />
         <Skills />
-        
+        <Experience/>
+        <Project/>
         <Education />
         <Contact />
         
