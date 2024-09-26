@@ -48,6 +48,7 @@
 .edu-container{
     display:flex;
     align-items:center;
+    flex-direction: column;
     justify-content: space-evenly;
     
 }
@@ -85,6 +86,20 @@
 .hovered{
     animation:slider 4s ease 0s infinite ;
 }
+
+.edu-details{
+    width:500px;
+    text-align: center;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px ;
+}
+
+.edu-details ul li{
+    list-style-type: none;
+    text-align: left;
+}
+
 @keyframes slider {
     0%{transform: rotate(0deg);}
     10%{transform: rotate(5deg) ;}
@@ -98,87 +113,11 @@
     90%{transform: rotateX(5deg) ;}
     100%{transform: rotateX(-5deg) ;}
 }
-.course{
-    width: 400px;
-    height: 300px;
-    border: 0px solid black;
-    border-radius:72% 27% 63% 37% / 46% 26% 73% 55%;
-    color:white;
-    background-color: rgb(174, 180, 181);
-    background: linear-gradient(45deg,rgb(1, 9, 33),rgb(67, 128, 157));
-    /*clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
-    /*clip-path: url("#clipPath");*/
-    overflow: hidden;
-    animation:fun 5s ease-in-out infinite;
-}
-
-@keyframes fun {
-    0%{transform: scale(1);}
-    10%{transform: scale(1.1);}
-    20%{transform: scale(1);}
-    30%{transform: scale(1.1);}
-    40%{transform: scale(1);}
-    50%{transform: scale(1.1);}
-    60%{transform: scale(1);}
-    70%{transform: scale(1.1);}
-    80%{transform: scale(1.1);}
-    100%{transform: scale(1);}
-}
-
-.course > div:first-child{
-    position: absolute;
-    display: flex;
-    border: 0px solid black;
-    width: 300%;
-    height: 100%;
-    transition: 0.5s;
-}
-
-.course > div:first-child > div{
-    position: relative;
-    border: 0px solid black;
-    width: 33.333%;
-    height: 100%;
-    padding: 0px 5px;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-}
-.course > div:first-child p{
-    text-align: center;
-}
-.course div > ul{
-    border: 0px solid black;
-    list-style-type: none;
-    padding:0;
-    margin:0 ;
-}
-.course div ul li{
-    padding:0px 0px 15px 0px;
-    text-align: center;
-}
 
 @media only screen and (max-width:700px){
     .university>div{
         scale:1.0;
         display: block;/*inline for other screen size*/
-    }
-    .course{
-        transform: scale(0.8);
-    }
-
-    @keyframes fun {
-        0%{transform: scale(0.8);}
-        10%{transform: scale(0.9);}
-        20%{transform: scale(0.8);}
-        30%{transform: scale(0.9);}
-        40%{transform: scale(0.8);}
-        50%{transform: scale(0.9);}
-        60%{transform: scale(0.8);}
-        70%{transform: scale(0.9);}
-        80%{transform: scale(0.8);}
-        90%{transform: scale(0.9);}
-        100%{transform: scale(0.8);}
     }
 }
 @media only screen and (max-width:600px){
@@ -196,42 +135,8 @@
     .university>div{
         scale: 1.0;
     }
-    .course{
-        transform: scale(0.7);
-    }
-
-    @keyframes fun {
-        0%{transform: scale(0.7);}
-        10%{transform: scale(0.8);}
-        20%{transform: scale(0.7);}
-        30%{transform: scale(0.8);}
-        40%{transform: scale(0.7);}
-        50%{transform: scale(0.8);}
-        60%{transform: scale(0.7);}
-        70%{transform: scale(0.8);}
-        80%{transform: scale(0.7);}
-        90%{transform: scale(0.8);}
-        100%{transform: scale(0.7);}
-    }
 }
 
 @media only screen and (max-width:330px){
-    .course{
-        transform:scale(0.5);
-    }
 
-    @keyframes fun {
-        0%{transform: scale(0.5);}
-        10%{transform: scale(0.6);}
-        20%{transform: scale(0.5);}
-        30%{transform: scale(0.6);}
-        40%{transform: scale(0.5);}
-        50%{transform: scale(0.6);}
-        60%{transform: scale(0.5);}
-        70%{transform: scale(0.6);}
-        80%{transform: scale(0.5);}
-        90%{transform: scale(0.6);}
-        100%{transform: scale(0.5);}
-    }
-    
 }

@@ -2,6 +2,7 @@ import "./Education.css";
 import { useRef, useState,useEffect} from "react";
 import {motion} from "framer-motion"
 const Education=()=>{
+    const [currentEducation,setCurrentEducation]=useState(null);
     const [isHovered,setIsHovered]=useState(false);
     const [isHovered2,setIsHovered2]=useState(false);
     const sectionRef=useRef(null); //we use this way to access the DOM
@@ -49,20 +50,21 @@ const Education=()=>{
             },3000);
         }
     };
-    const uMcourses=["C++","Assembly language","Digital system"];
-    const uOprjoects=["Search and replace in text with NASM","Banking system queue simulation with C++","Sudoku game resloution algorithm<"];
-    const uOcourses=["Java Programming","Python Programming","Computer architecture","Discrete structures","Data communication and networks","Intro to formal language"];
-    const uMprjoects=["C++","Assembly language","Digital system","C++","Assembly language","Digital system"];
+    const myEducations=[
+        {
+            university:"Universite de moncton",
+            courses:["C++","Assembly language","Digital system"],
+            awards:["chef","chefjeu"],
+        },
+        {
+            university:"Universite de moncton 4",
+            courses:["Java Programming","Python Programming","Computer architecture","Discrete structures","Data communication and networks","Intro to formal language"],
+            awards:["chef","chefjeu"]
+        }
+    ];
 
-    const switchCourse= (name)=>{
-        const myCourses=document.querySelector(".uni-course");
-        
-        if(name=="uMcourses"){
-            myCourses.style.left=-100+"%";
-        }
-        if((name=="uOcourses")){
-            myCourses.style.left=-200+"%";
-        }
+    const viewEducation= (education)=>{
+        setCurrentEducation(education);
     };
 
     const setAnimation=()=>{
@@ -92,17 +94,24 @@ const Education=()=>{
                 </div>*/}
             <div className="edu-container">
                 <div className="university" id="uni">
-                    <div className={isHovered ? "hovered":""} onClick={()=>switchCourse("uMcourses")} onMouseOver={setAnimation} onMouseLeave={unsetAnimation}><span>Universite de Moncton</span></div>
-                    <div className={isHovered2 ? "hovered":""} onClick={()=>switchCourse("uOcourses")} onMouseOver={setAnimation2} onMouseLeave={unsetAnimation2}><span>University of Ottawa</span></div>
+                    <div className={isHovered ? "hovered":""} onClick={()=>viewEducation(myEducations[0])} onMouseOver={setAnimation} onMouseLeave={unsetAnimation}><span>{myEducations[0].university}</span></div>
+                    <div className={isHovered2 ? "hovered":""} onClick={()=>viewEducation(myEducations[1])} onMouseOver={setAnimation2} onMouseLeave={unsetAnimation2}><span>{myEducations[1].university}</span></div>
                 </div>
-                <div className="course">
+                {currentEducation &&
+                    <div className="edu-details">
+                            <h3>University of Moncton</h3>
+                            <b>2023-2024</b><br/>
+                            <b>Relevat courses</b>
+                            <ul>
+                                {currentEducation.courses.map((course)=>(<li>{course}</li>))}
+                            </ul>
+                            <b>Distinctions</b>
+                            <ul>
+                                {currentEducation.awards.map((award)=>(<li>{award}</li>))}
+                            </ul>
+                    </div>}
 
-                {/*<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
-                    <clipPath id="clipPath">
-                        <path d="M1200 0L0 0 598.97 114.72 1200 0z" />
-                    </clipPath>
-                    </svg>*/}
-
+                {/* <div className="course">
                     <div className="uni-course">
                         <div>
                             <p> Click on the left side to explore my relevant courses</p>
@@ -118,8 +127,7 @@ const Education=()=>{
                             </ul>
                         </div>
                     </div>
-            
-                </div>
+                </div> */}
                 
             </div>
         </section>
