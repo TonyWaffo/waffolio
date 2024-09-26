@@ -1,0 +1,169 @@
+.skills{
+    width:100%;
+    height:auto;
+    margin-top: 70px;
+    border:0px solid black;
+}
+.skills h1{
+    text-align: center;
+}
+
+.skills-board{
+    border: 0px solid black;
+    position: relative;
+    margin-top: 50px;
+}
+/*.skills-board > div{
+    position: relative;
+    text-align: center;
+    border: 0px solid black;
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+    animation: un 5s ease 2s infinite;
+}
+.mini-board::before{
+    position: absolute;
+    content:"";
+    top:0;
+    right:0;
+    width: 60%;
+    height: 30%;
+    border-top-right-radius: 4px;
+    border-top: 0px solid yellow;
+    border-right: 0px solid yellow;
+    box-shadow: 6px -5px 5px rgb(67, 128, 157);
+    transition: 0.4s ease;
+    z-index: -1;
+}
+.mini-board::after{
+    position: absolute;
+    content:"";
+    bottom:0;
+    left:0;
+    width: 60%;
+    height: 30%;
+    border-bottom-left-radius: 4px;
+    border-bottom: 0px solid yellow;
+    border-left: 0px solid yellow;
+    box-shadow: -5px 6px 5px rgb(1, 9, 33);
+    transition: 0.4s ease;
+    z-index: -1;
+}
+.mini-board:hover::before{
+    width: 80%;
+    height: 80%;
+}
+.mini-board:hover::after{
+    width: 80%;
+    height: 80%;
+}
+
+@keyframes fun {
+    0%{}
+    100%{}
+}*/
+.skills-board button{
+    margin-top:20px;
+    background: linear-gradient(45deg,rgb(1, 9, 33),rgb(67, 128, 157));
+    border: none;
+    box-shadow: 0px 0px 15px white;
+    color:white;
+}
+.skills-board button:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-out;
+}
+.swiper{
+    border: 0px solid black;
+    width: 500px;
+    height: 200px;
+    background-color: transparent;
+}
+.swiper-Slide{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-board{
+    position: relative;
+    width:100px;
+    left:50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    text-align: center;
+    background-color: transparent;
+}
+.mini-board button{
+    cursor: pointer;
+}
+.active-popup{
+    overflow: hidden; /*impossible to scroll when thre is the popup*/
+}
+.active-popup::after{ /*Apply a dark background when there is a popup*/
+    content: "";
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0.5;
+    z-index: 8;
+    overflow: hidden;
+}
+.skills .popup{
+    position:fixed;
+    width:400px;
+    padding: 0px 5px;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    /*clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);*/
+    border-radius: 5px;
+    background-color: white;
+    opacity: 1;
+    z-index: 10;
+}
+.skills .popup i{
+    right: 0;
+}
+.skills .popup p{
+    text-align: center;
+    margin-top: 0px;
+}
+@media only screen and (max-width:700px){
+    .swiper{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media only screen and (max-width:500px){
+    .swiper{
+        width: 290px;
+        height: 180px;
+    }
+}
+@media only screen and (max-width:450px){
+    .swiper{
+        width: 300px;
+        height: 200px;
+    }
+    .skills .popup{
+        width:250px;
+        height: auto;
+    }
+}
+@media only screen and (max-width:300px){
+    .swiper{
+        width: 90%;
+        height: 200px;
+    }
+    .skills .popup{
+        width:80%;
+        height: auto;
+    }
+}

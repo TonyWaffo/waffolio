@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'papyrus';
+  src: url(papyrus.TTF);
+}
+@font-face {
+  font-family:'Ink free';
+  src: url(Inkfree.ttf);
+}
+@font-face {
+  font-family:'Comic Sans MS';
+  src: url(LDFComicSans.ttf);
+}
+body {
+  margin: 0;
+  font-family: 'papyrus','Ink free', 'Comic Sans MS';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(193, 193, 193)/*rgb(221, 221, 221)*/
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.root{
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  font-family:'papyrus','Ink free', 'Comic Sans MS';
+}
