@@ -1,0 +1,46 @@
+.experience h1{
+    text-align: center;
+}
+.experience-list{
+    position: relative;
+    width:90%;
+    left:5%;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    justify-content:space-around;
+    border:1px solid black
+}
+.experience-container{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content:space-around;
+    text-align: left;
+    border:1px solid black
+}
+.experience-container.reverse{
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.experience-img{
+    width: 400px;
+    height:300px;
+    border:1px solid black; /* gap between the divs*/
+    background-color: transparent;
+}
+.experience-img img{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    resize: none;
+    object-fit: cover;
+}
+.experience-content{
+    width:700px;
+    border: 1px solid black;
+    padding: 0px 30px;
+    font-size: 20px; 
+}
