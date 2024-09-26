@@ -32,7 +32,7 @@ const Experience=()=>{
             <h1>Experience</h1>
             <div className="experience-list">
                 {experienceList.map((experience,index)=>(
-                    <div className= {`${"experience-container"} ${index%2==1 ? '':'reverse'}`}>
+                    <div className= {`${"experience-container"} ${index%2==0 ? '':'reverse'}`}>
                         <div className="experience-img">
                             <img src={experience.picture} height="100%" width="100%"></img>
                         </div>

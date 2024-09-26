@@ -8,17 +8,15 @@
     display: flex;
     flex-direction: column;
     gap:50px;
-    justify-content:space-around;
-    border:1px solid black
+    border:0px solid black
 }
 .experience-container{
     width:100%;
     display: flex;
     flex-direction: row;
     gap:10px;
-    justify-content:space-around;
     text-align: left;
-    border:1px solid black
+    border:0px solid black
 }
 .experience-container.reverse{
     flex-direction: row-reverse;
@@ -26,12 +24,13 @@
 }
 .experience-img{
     width: 400px;
-    height:300px;
-    border:1px solid black; /* gap between the divs*/
+    height:200px;
+    border:0px solid black;
+    border-radius: 10px;
     background-color: transparent;
+    overflow: hidden;
 }
 .experience-img img{
-    display: none;
     width: 100%;
     height: 100%;
     background-color: gray;
