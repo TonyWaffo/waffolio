@@ -8,28 +8,29 @@
 }
 .experience-list{
     position: relative;
-    width:90%;
-    left:5%;
+    width:80%;
+    left:10%;
     display: flex;
     flex-direction: column;
-    gap:50px;
+    gap:70px;
     border:0px solid black
 }
 .experience-container{
     width:100%;
     display: flex;
     flex-direction: row;
-    gap:10px;
-    text-align: left;
-    border:0px solid black
+    justify-content:;
+    gap:70px;
+    text-align: right;
+    border:px solid black
 }
 .experience-container.reverse{
     flex-direction: row-reverse;
-    text-align: right;
+    text-align: left;
 }
 .experience-img{
-    width: 400px;
-    height:200px;
+    min-width: 400px;
+    height:300px;
     border:0px solid black;
     border-radius: 10px;
     background-color: transparent;
@@ -44,7 +45,48 @@
 }
 .experience-content{
     width:700px;
-    border: 1px solid black;
-    padding: 0px 30px;
+    border: 0px solid black;
+    padding: 0px 0px;
     font-size: 20px; 
+    flex-grow: 1;
+}
+
+@media only screen and (max-width:1000px) {
+    .experience-img{
+        min-width: 300px;
+        height:250px;
+    }
+    .experience-container{
+        gap:30px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .experience-container{
+        flex-direction: column;
+        gap:10px;
+    }
+    .experience-container.reverse{
+        flex-direction: column;
+    }
+    .experience-img{
+        min-width: 250px;
+        height:150px;
+    }
+    .experience-container .experience-img{
+        align-self:flex-end;
+    }
+    .experience-container.reverse .experience-img{
+        align-self: flex-start;
+    }
+    .experience-content{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .experience-list{
+        width:90%;
+        left:5%;
+    }
 }

@@ -53,17 +53,17 @@ const Education=()=>{
     const myEducations=[
         {
             university:"University of Moncton",
-            courses:["C++","Assembly language","Digital system"],
+            courses:["C++","Assembly language","Digital system, OOP concept"],
             program:"Bachelor in applied computer science",
             timePeriod:"2021 - 2022",
-            awards:["chef","chefjeu"],
+            awards:["Merit scholarship"],
         },
         {
             university:"University of Ottawa",
             timePeriod:"2022 - 2025",
             program:"Honor Bachelor Computer science",
-            courses:["Java Programming","Python Programming","Computer architecture","Discrete structures","Data communication and networks","Intro to formal language"],
-            awards:["chef","chefjeu"]
+            courses:["Data structures and algorithms","Data science","Computer vision","Database management","Introduction to AI","Cryptography","Programming paradigm","Data communication and networking","Design of user interfaces"],
+            awards:["Dean's honors list","Renewable bursary for french study","Roger Guidon scholarship"]
         }
     ];
 
@@ -95,9 +95,8 @@ const Education=()=>{
                 </div>
                 {currentEducation &&
                     <div className="edu-details">
-                            <h3>{currentEducation.university}</h3>
-                            <b>2023-2024</b><br/>
-                            <b>Relevat courses</b>
+                            <h3>{currentEducation.university}<br/>{currentEducation.timePeriod}</h3>
+                            <b>Relevant courses</b>
                             <ul>
                                 {currentEducation.courses.map((course)=>(<li>{course}</li>))}
                             </ul>

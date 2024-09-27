@@ -13,55 +13,6 @@
     position: relative;
     margin-top: 50px;
 }
-/*.skills-board > div{
-    position: relative;
-    text-align: center;
-    border: 0px solid black;
-    border-radius: 4px;
-    padding: 10px 10px 10px 10px;
-    animation: un 5s ease 2s infinite;
-}
-.mini-board::before{
-    position: absolute;
-    content:"";
-    top:0;
-    right:0;
-    width: 60%;
-    height: 30%;
-    border-top-right-radius: 4px;
-    border-top: 0px solid yellow;
-    border-right: 0px solid yellow;
-    box-shadow: 6px -5px 5px rgb(67, 128, 157);
-    transition: 0.4s ease;
-    z-index: -1;
-}
-.mini-board::after{
-    position: absolute;
-    content:"";
-    bottom:0;
-    left:0;
-    width: 60%;
-    height: 30%;
-    border-bottom-left-radius: 4px;
-    border-bottom: 0px solid yellow;
-    border-left: 0px solid yellow;
-    box-shadow: -5px 6px 5px rgb(1, 9, 33);
-    transition: 0.4s ease;
-    z-index: -1;
-}
-.mini-board:hover::before{
-    width: 80%;
-    height: 80%;
-}
-.mini-board:hover::after{
-    width: 80%;
-    height: 80%;
-}
-
-@keyframes fun {
-    0%{}
-    100%{}
-}*/
 .skills-board button{
     margin-top:20px;
     background: linear-gradient(45deg,rgb(1, 9, 33),rgb(67, 128, 157));
