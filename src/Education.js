@@ -52,12 +52,16 @@ const Education=()=>{
     };
     const myEducations=[
         {
-            university:"Universite de moncton",
+            university:"University of Moncton",
             courses:["C++","Assembly language","Digital system"],
+            program:"Bachelor in applied computer science",
+            timePeriod:"2021 - 2022",
             awards:["chef","chefjeu"],
         },
         {
-            university:"Universite de moncton 4",
+            university:"University of Ottawa",
+            timePeriod:"2022 - 2025",
+            program:"Honor Bachelor Computer science",
             courses:["Java Programming","Python Programming","Computer architecture","Discrete structures","Data communication and networks","Intro to formal language"],
             awards:["chef","chefjeu"]
         }
@@ -84,14 +88,6 @@ const Education=()=>{
         <>
         <section className="education" ref={sectionRef}>
             <h1>Education</h1>
-            {/*<div class="edu-icon">
-                <div><i class="fa-solid fa-building-columns"></i></div>
-                <div><i class="fa-solid fa-book"></i></div>
-                <div><i class="fa-solid fa-computer-mouse"></i></div>
-                <div><i class="fa-solid fa-pen"></i></div>
-                <div><i class="fa-solid fa-graduation-cap"></i></div>
-               <div><i class="fa-solid fa-computer"></i></div>
-                </div>*/}
             <div className="edu-container">
                 <div className="university" id="uni">
                     <div className={isHovered ? "hovered":""} onClick={()=>viewEducation(myEducations[0])} onMouseOver={setAnimation} onMouseLeave={unsetAnimation}><span>{myEducations[0].university}</span></div>
@@ -99,7 +95,7 @@ const Education=()=>{
                 </div>
                 {currentEducation &&
                     <div className="edu-details">
-                            <h3>University of Moncton</h3>
+                            <h3>{currentEducation.university}</h3>
                             <b>2023-2024</b><br/>
                             <b>Relevat courses</b>
                             <ul>
@@ -110,24 +106,6 @@ const Education=()=>{
                                 {currentEducation.awards.map((award)=>(<li>{award}</li>))}
                             </ul>
                     </div>}
-
-                {/* <div className="course">
-                    <div className="uni-course">
-                        <div>
-                            <p> Click on the left side to explore my relevant courses</p>
-                        </div>
-                        <div id="uMcourses">
-                            <ul>
-                                {uMcourses.map((subject)=>(<li>{subject}</li>))}
-                            </ul>
-                        </div>
-                        <div id="uOcourses">
-                            <ul>
-                                {uOcourses.map((subject)=>(<li>{subject}</li>))}
-                            </ul>
-                        </div>
-                    </div>
-                </div> */}
                 
             </div>
         </section>
