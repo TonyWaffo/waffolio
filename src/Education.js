@@ -63,7 +63,7 @@ const Education=()=>{
             timePeriod:"2022 - 2025",
             program:"Honor Bachelor Computer science",
             courses:["Data structures and algorithms","Data science","Computer vision","Database management","Introduction to AI","Cryptography","Programming paradigm","Data communication and networking","Design of user interfaces"],
-            awards:["Dean's honors list","Renewable bursary for french study","Roger Guidon scholarship"]
+            awards:["Dean's honors list","Renewable bursary for french study","Roger Guidon scholarship","Jean Pierre Martin Memorial Scholarship"]
         }
     ];
 

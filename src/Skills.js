@@ -23,6 +23,7 @@ import reactPic from "./react.png"
 import prologPic from "./prolog.png"
 import phpPic from "./php.png"
 import javaPic from "./java.png"
+import flutterPic from "./flutter.png"
 
 
 
@@ -122,6 +123,12 @@ const Skills=()=>{
             and security protocols essential in maintaining the confidentiality, integrity, and authenticity of information.`,
             technologies: ["Cryptography", "Encryption", "Security"],
             picture: cryptoPic,
+        },
+        {
+            title: "Flutter Mobile development",
+            description: `Currently learning Dart and the Flutter framework to build a functional app by 2025, combining my problem-solving skills with Flutter's capabilities for mobile development.`,
+            technologies: ["Dart", "Mobile development"],
+            picture: flutterPic,  // Can use another relevant image if available
         },
         {
             title: "Go Programming",

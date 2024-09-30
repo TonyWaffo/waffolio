@@ -1,23 +1,33 @@
-import React,{useRef} from "react";
+import React,{useRef,useState} from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 
 
 const Contact=()=>{
     const form=useRef();
+    const [submissionMessage, setSubmissionMessage] = useState(null); // State to store the message
     const sendEmail=(e)=>{
         e.preventDefault(); //prevent from the default behavior of the browser
 
         emailjs.sendForm('service_sqmr98o', 'template_4uz1vwm', form.current, 'r4kirrNTrKgdgdnDs')
         .then((result)=>{
             console.log(result.text);
-            const successMsg= document.createElement("p");
-            const text= document.createTextNode("Thank you for reaching out to us! This is to confirm that your message has been successfully received. Tony is actively reviewing it and he will respond to you as soon as possible!!");
-            successMsg.appendChild(text);
-            form.current.appendChild(successMsg);
+            // Set the success message in the state
+            setSubmissionMessage(
+                "Thank you for reaching out to us! This is to confirm that your message has been successfully received. Tony is actively reviewing it and will respond to you as soon as possible!"
+            );
+
+            setTimeout(()=>{
+                setSubmissionMessage(null);
+            },10000);
         })
+
         .catch((error)=>{
             console.log(error.text);
+            // Set the error message in the state
+            setSubmissionMessage(
+                error.text
+            );
         });
         e.target.reset();//reset the form
     };
@@ -55,7 +65,9 @@ const Contact=()=>{
                         <input type="email" name="email" placeholder="Your email"/>
                         <textarea  placeholder="Your message" name="message" cols="50" rows="10"/>
                         <button type="submit" className="">Send message</button>
+                        {submissionMessage && <p>{submissionMessage}</p>}
                     </form>
+
                 </div>
             </div>
         </section>

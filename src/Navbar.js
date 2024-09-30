@@ -6,7 +6,7 @@ const Navbar=()=>{
 
     const [active, setActive]=useState("nav-right");
     const navToggle=()=>{
-        if(window.innerWidth<600){ //this side navbar shows when max-width=600px
+        if(window.innerWidth<850){ //this side navbar shows when max-width=600px
             active=="nav-right" ? setActive("nav-right-hide"):setActive("nav-right");
         }
     }

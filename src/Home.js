@@ -35,7 +35,7 @@ const Home=()=>{
                      I hope you will enjoy exploring my work and get a better sense of my background in computer science.
                 </span><br/>
                 <Link to="contact" spy={true} smooth={true} offset={-90} duration={500} delay={0}><button>Hire me</button></Link>
-                <a href={resume} download="Tony's Resume"><button>My resume</button></a>
+                <a href={resume} download="Tony Waffo Resume"><button>My resume</button></a>
                 <div className="media">
                     <a href="https://github.com/TonyWaffo" className="fa-brands fa-github fa-bounce fa-5x"></a>
                     <a href="https://www.linkedin.com/in/tony-waffo-279571210/" className="fa-brands fa-linkedin fa-bounce fa-5x"></a>
