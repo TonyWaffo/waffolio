@@ -22,7 +22,7 @@
     justify-content:;
     gap:70px;
     text-align: right;
-    border:px solid black
+    border:1px solid black
 }
 .experience-container.reverse{
     flex-direction: row-reverse;
