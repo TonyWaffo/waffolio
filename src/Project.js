@@ -1,9 +1,10 @@
 import "./Project.css";
-import { useState,useRef } from "react";
+import { useState } from "react";
 
-import aboutPic from "./aboutPic.webp";
-import vid1 from "./vid1.mp4";
-import vid2 from "./vid2.mp4";
+import eHotelPic from "./eHotel.png"
+import brickBreakerPic from "./brickBreaker.png"
+import eHotelVid from "./eHotel.webm"
+import brickBreakerVid from "./brickBreaker.webm"
 
 import { isVisible } from "@testing-library/user-event/dist/utils";
 
@@ -24,22 +25,16 @@ const Project=()=>{
 
     const projectList=[
         {
-            title:'Novigrad',
-            technologies:['Html',"Js"],
-            videoFile:vid1,
-            imageFile:aboutPic
+            title:'E- Hotel',
+            technologies:['ReactJs',"Javascript","NodeJs","PostgreSql"],
+            videoFile:eHotelVid,
+            imageFile:eHotelPic
         },
         {
-            title:'Novigrad',
-            technologies:['Html',"Js"],
-            videoFile:vid2,
-            imageFile:aboutPic
-        },
-        {
-            title:'Novigrad',
-            technologies:['Html',"Js"],
-            videoFile:vid1,
-            imageFile:aboutPic
+            title:'Brick Breaker',
+            technologies:['CSS',"SFML library","OOP"],
+            videoFile:brickBreakerVid,
+            imageFile:brickBreakerPic
         }
     ];
 
@@ -77,7 +72,7 @@ const Project=()=>{
                         <i class="fa-regular fa-rectangle-xmark" onClick={closeVideoPlayer}></i>
                     </div>
                     <video width="100%" height="100%" controls>
-                        <source src={videoPlayer?.videoFile} type="video/mp4"/>
+                        <source src={videoPlayer?.videoFile} type="video/webm"/>
                         Your browser does not support the video tag.
                     </video>
                 </div>

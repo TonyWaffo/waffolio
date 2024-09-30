@@ -31,7 +31,7 @@ const Home=()=>{
                     />
                 </span><br/><br/>
                 
-                <span className="intro" style={{fontSize:20+"px"}}>Welcome to my portfolio website! I'm a computer science student blends a love for sports with a keen interest in technology. This portfolio showcases my projects and skills.
+                <span className="intro" style={{fontSize:20+"px"}}>Welcome to my portfolio website! I'm a computer science student who blends a love for sports with a keen interest in technology. This portfolio showcases my projects and skills.
                      I hope you will enjoy exploring my work and get a better sense of my background in computer science.
                 </span><br/>
                 <Link to="contact" spy={true} smooth={true} offset={-90} duration={500} delay={0}><button>Hire me</button></Link>
