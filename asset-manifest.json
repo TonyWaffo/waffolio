@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "https://waffolio.com/static/css/main.124d1199.css",
+    "main.js": "https://waffolio.com/static/js/main.a5bc4d4c.js",
+    "static/js/787.2f916ad9.chunk.js": "https://waffolio.com/static/js/787.2f916ad9.chunk.js",
+    "static/media/eHotel.webm": "https://waffolio.com/static/media/eHotel.e1772e4c7796b167b3ca.webm",
+    "static/media/brickBreaker.webm": "https://waffolio.com/static/media/brickBreaker.f9135acd454e716244bb.webm",
+    "static/media/aboutPic.webp": "https://waffolio.com/static/media/aboutPic.50a76db0275836e200d7.webp",
+    "static/media/eHotel.png": "https://waffolio.com/static/media/eHotel.387ee6149017755a1dc1.png",
+    "static/media/go.png": "https://waffolio.com/static/media/go.0f48aba15ae27447a703.png",
+    "static/media/teleperformance.jpeg": "https://waffolio.com/static/media/teleperformance.a7b128f057792b64a87d.jpeg",
+    "static/media/cpp.png": "https://waffolio.com/static/media/cpp.666af1b3598c92045b63.png",
+    "static/media/php.png": "https://waffolio.com/static/media/php.aa680f57bf75b5d5acdc.png",
+    "static/media/papyrus.TTF": "https://waffolio.com/static/media/papyrus.ca0c0d7f3f97c15b5476.TTF",
+    "static/media/Resume.pdf": "https://waffolio.com/static/media/Resume.5a48f33e0558b54873f7.pdf",
+    "static/media/android.png": "https://waffolio.com/static/media/android.76880d9f995ee45e4e5b.png",
+    "static/media/prolog.png": "https://waffolio.com/static/media/prolog.a784d78904428ed4f92a.png",
+    "static/media/homePic.webp": "https://waffolio.com/static/media/homePic.7e22a6f2292df19b1132.webp",
+    "static/media/Inkfree.ttf": "https://waffolio.com/static/media/Inkfree.0f15d867500d20e1f9d3.ttf",
+    "static/media/cryptography.png": "https://waffolio.com/static/media/cryptography.44b6ea5e186050de2fc5.png",
+    "static/media/java.png": "https://waffolio.com/static/media/java.fc241426afd8f52a312e.png",
+    "static/media/ai.png": "https://waffolio.com/static/media/ai.559f6ab94a0393b6d9a4.png",
+    "static/media/bease.jpg": "https://waffolio.com/static/media/bease.3de8e5169ae35012cdac.jpg",
+    "static/media/brickBreaker.png": "https://waffolio.com/static/media/brickBreaker.c0b62926678d3ea71bb0.png",
+    "static/media/sql.png": "https://waffolio.com/static/media/sql.e6a26b5e9d1beabc4c6c.png",
+    "static/media/python.png": "https://waffolio.com/static/media/python.91fe66c93d19d67edfc8.png",
+    "static/media/LDFComicSans.ttf": "https://waffolio.com/static/media/LDFComicSans.acf4b7e829f1fcdc78d4.ttf",
+    "static/media/react.png": "https://waffolio.com/static/media/react.7f810bcc50eb5be9eda3.png",
+    "static/media/rainbow.jpg": "https://waffolio.com/static/media/rainbow.dc37b09d551feb199cc4.jpg",
+    "static/media/logo.svg": "https://waffolio.com/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "https://waffolio.com/index.html",
+    "main.124d1199.css.map": "https://waffolio.com/static/css/main.124d1199.css.map",
+    "main.a5bc4d4c.js.map": "https://waffolio.com/static/js/main.a5bc4d4c.js.map",
+    "787.2f916ad9.chunk.js.map": "https://waffolio.com/static/js/787.2f916ad9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.124d1199.css",
+    "static/js/main.a5bc4d4c.js"
+  ]
+}
