@@ -5,10 +5,10 @@ import eHotelPic from "./eHotel.png"
 import brickBreakerPic from "./brickBreaker.png"
 import videoSurveillancePic from "./videoSurveillance.png"
 import novigradPic from "./novigrad.png"
-import eHotelVid from "./eHotel.webm"
-import brickBreakerVid from "./brickBreaker.webm"
-import novigradVid from "./novigrad.webm"
-import videoSurveillanceVid from "./videoSurveillance.webm"
+import eHotelVid from "./eHotel.mp4"
+import brickBreakerVid from "./brickBreaker.mp4"
+import novigradVid from "./novigrad.mp4"
+import videoSurveillanceVid from "./videoSurveillance.mp4"
 
 import { isVisible } from "@testing-library/user-event/dist/utils";
 
@@ -88,7 +88,7 @@ const Project=()=>{
                         <i class="fa-regular fa-rectangle-xmark" onClick={closeVideoPlayer}></i>
                     </div>
                     <video width="100%" height="100%" controls>
-                        <source src={videoPlayer?.videoFile} type="video/webm"/>
+                        <source src={videoPlayer?.videoFile} type="video/mp4"/>
                         Your browser does not support the video tag.
                     </video>
                 </div>
