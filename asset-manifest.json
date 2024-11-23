@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://tonywaffo.github.io/waffolio/static/css/main.1aea582c.css",
-    "main.js": "https://tonywaffo.github.io/waffolio/static/js/main.97dd62f3.js",
+    "main.js": "https://tonywaffo.github.io/waffolio/static/js/main.0e3026cf.js",
     "static/js/787.2f916ad9.chunk.js": "https://tonywaffo.github.io/waffolio/static/js/787.2f916ad9.chunk.js",
     "static/media/eHotel.mp4": "https://tonywaffo.github.io/waffolio/static/media/eHotel.9ceef86d2ada427b4943.mp4",
     "static/media/novigrad.mp4": "https://tonywaffo.github.io/waffolio/static/media/novigrad.4ba3305c39189eb346b6.mp4",
@@ -34,11 +34,11 @@
     "static/media/logo.svg": "https://tonywaffo.github.io/waffolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "https://tonywaffo.github.io/waffolio/index.html",
     "main.1aea582c.css.map": "https://tonywaffo.github.io/waffolio/static/css/main.1aea582c.css.map",
-    "main.97dd62f3.js.map": "https://tonywaffo.github.io/waffolio/static/js/main.97dd62f3.js.map",
+    "main.0e3026cf.js.map": "https://tonywaffo.github.io/waffolio/static/js/main.0e3026cf.js.map",
     "787.2f916ad9.chunk.js.map": "https://tonywaffo.github.io/waffolio/static/js/787.2f916ad9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1aea582c.css",
-    "static/js/main.97dd62f3.js"
+    "static/js/main.0e3026cf.js"
   ]
 }
