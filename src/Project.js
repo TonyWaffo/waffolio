@@ -3,8 +3,12 @@ import { useState } from "react";
 
 import eHotelPic from "./eHotel.png"
 import brickBreakerPic from "./brickBreaker.png"
+import videoSurveillancePic from "./videoSurveillance.png"
+import novigradPic from "./novigrad.png"
 import eHotelVid from "./eHotel.webm"
 import brickBreakerVid from "./brickBreaker.webm"
+import novigradVid from "./novigrad.webm"
+import videoSurveillanceVid from "./videoSurveillance.webm"
 
 import { isVisible } from "@testing-library/user-event/dist/utils";
 
@@ -35,6 +39,18 @@ const Project=()=>{
             technologies:['CSS',"SFML library","OOP"],
             videoFile:brickBreakerVid,
             imageFile:brickBreakerPic
+        },
+        {
+            title:'Video Surveillance Person  Recognition',
+            technologies:['Python',"Open CV"],
+            videoFile:videoSurveillanceVid,
+            imageFile:videoSurveillancePic
+        },
+        {
+            title:'Novigrad Service',
+            technologies:['Java',"Android studio"],
+            videoFile:novigradVid,
+            imageFile:novigradPic
         }
     ];
 
