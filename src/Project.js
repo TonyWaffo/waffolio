@@ -88,7 +88,11 @@ const Project=()=>{
                         <i class="fa-regular fa-rectangle-xmark" onClick={closeVideoPlayer}></i>
                     </div>
                     <video width="100%" height="100%" controls>
+                        {/* MP4 format - widely supported */}
                         <source src={videoPlayer?.videoFile} type="video/mp4"/>
+                        
+                        {/* WebM format - supported by most modern browsers */}
+                        <source src={videoPlayer?.videoFile.replace('.mp4', '.webm')} type="video/webm" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
